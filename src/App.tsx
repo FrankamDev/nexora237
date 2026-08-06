@@ -9,12 +9,15 @@ import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import ScrollProgress from "./components/ScrollProgress";
 
 function App() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
       <main>
+        <ScrollProgress/>
         <Hero />
         <Stats />
         <Risks />
@@ -24,6 +27,7 @@ function App() {
         <Testimonials />
         <FAQ />
         <FinalCTA />
+        <FloatingWhatsApp/>
       </main>
       <Footer />
     </div>

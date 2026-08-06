@@ -262,22 +262,22 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Marie N.",
+    name: "Frank Kamgang.",
     role: "Propriétaire — Bastos",
     content:
       "Après des mois de lutte inutile contre les cafards, NEXORA a tout réglé en une seule intervention. Plus rien depuis 8 mois. Service impeccable et très professionnel.",
     rating: 5,
   },
   {
-    name: "Jean-Paul T.",
+    name: "Karmel Maffo.",
     role: "Gérant de restaurant — Centre-ville",
     content:
       "Intervention discrète un dimanche matin. Les rats ont disparu. Mes clients n’ont rien remarqué. Je recommande vivement NEXORA à tous les professionnels de la restauration.",
     rating: 5,
   },
   {
-    name: "Amina K.",
-    role: "Famille — Odza",
+    name: "Christian Cheffo.",
+    role: "Famille — Nkolfulu",
     content:
       "Professionnels, ponctuels et rassurants. Ils ont pris le temps d’expliquer chaque étape. Les punaises de lit sont parties définitivement. Merci NEXORA !",
     rating: 5,

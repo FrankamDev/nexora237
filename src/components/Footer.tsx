@@ -247,7 +247,7 @@ export default function Footer() {
                   <MapPin className="w-4 h-4" />
                 </div>
                 <span className="text-slate-300">
-                  Yaoundé et environs<br />Cameroun
+                  Yaoundé, Douala et environs<br />Cameroun
                 </span>
               </li>
 
@@ -259,7 +259,7 @@ export default function Footer() {
                   href={`tel:+${WHATSAPP_NUMBER}`}
                   className="text-slate-300 hover:text-cyan-300 transition-colors font-medium"
                 >
-                  +237 699 00 00 00
+                  +237 690 37 29 77 
                 </a>
               </li>
 
@@ -271,7 +271,7 @@ export default function Footer() {
                   href="mailto:contact@nexora.cm"
                   className="text-slate-300 hover:text-cyan-300 transition-colors font-medium"
                 >
-                  contact@nexora.cm
+                  contact.nexora.cm@gmail.com
                 </a>
               </li>
             </ul>
@@ -285,7 +285,7 @@ export default function Footer() {
           
           <div className="flex items-center gap-2 text-slate-400">
             <Zap className="w-3.5 h-3.5 text-amber-400" />
-            <span>Intervention d'urgence 7j/7 — Yaoundé</span>
+            <span>Intervention d'urgence 7j/7 — Yaoundé , Doual, Bertoua & Bafoussam</span>
           </div>
         </div>
       </div>

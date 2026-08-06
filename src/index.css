@@ -1,1 +1,132 @@
 @import "tailwindcss";
+
+
+
+/* ==========================================================================
+   1. OPTIMISATIONS GÉNÉRALES & ERGONOMIE MOBILE
+   ========================================================================== */
+
+html {
+  /* Scroll fluide sur mobile et desktop */
+  scroll-behavior: smooth;
+  /* Anti-aliasing haut de gamme pour les polices sur fond sombre */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Empêche l'agrandissement automatique du texte sur iOS en orientation paysage */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #090D16;
+  color: #F8FAFC;
+  /* Supprime le highlight gris bleu agressif lors d'un tap tactile sur Android/iOS */
+  -webkit-tap-highlight-color: transparent;
+  /* Supprime le rebond d'overscroll désagréable sur mobile */
+  overscroll-behavior-y: none;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Fix pour la hauteur d'écran sur Safari iOS (prise en compte des barres de navigation) */
+.min-h-screen-mobile {
+  min-height: 100vh;
+  min-height: 100dvh; /* Dynamic Viewport Height */
+}
+
+/* ==========================================================================
+   2. TOUCH TARGETS & ACCESSIBILITÉ MOBILE
+   ========================================================================== */
+
+/* Agrandit la zone d'impact des boutons et des puces tactiles sans déformer le design */
+@media (max-width: 768px) {
+  button, 
+  a, 
+  input, 
+  select {
+    min-height: 44px; /* Norme Apple HIG pour l'ergonomie tactile */
+  }
+
+  /* Fix pour empêcher iOS de faire un zoom automatique dérangeant sur les inputs */
+  input, 
+  textarea, 
+  select {
+    font-size: 16px !important;
+  }
+}
+
+/* ==========================================================================
+   3. DEEP CUSTOM SCROLLBAR (Style Obsidian & WhatsApp)
+   ========================================================================== */
+
+/* Personnalisation de la barre de défilement (Mobile Webkit & Desktop) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090D16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 9999px;
+  border: 1px solid rgba(6, 182, 212, 0.15);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06B6D4;
+}
+
+/* Scrollbar minimale dédiée à la fenêtre de chat WhatsApp */
+.chat-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   4. GLASSMORPHISM & NEON EFFECTS HIGH-PERFORMANCE
+   ========================================================================== */
+
+/* Accélération matérielle GPU pour des animations fluides sur mobiles d'entrée/milieu de gamme */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+/* Flou arrière-plan optimisé pour les processeurs mobiles */
+.glass-obsidian {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(51, 65, 85, 0.7);
+}
+
+/* Animation douce de lueur au tap/touch sur mobile */
+@media (max-width: 640px) {
+  .active-glow:active {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.35);
+    transform: scale(0.98);
+    transition: all 0.15s ease;
+  }
+}
+
+/* ==========================================================================
+   5. AJUSTEMENTS POUR LE WIDGET WHATSAPP FLOTTANT SUR MOBILE
+   ========================================================================== */
+
+/* Évite que le widget flottant masque des éléments cruciaux sur très petits écrans */
+@media (max-width: 480px) {
+  .fixed-whatsapp-container {
+    bottom: 1rem;
+    right: 1rem;
+  }
+  
+  /* Masque l'ombre excessive sur mobile pour économiser la batterie et la mémoire GPU */
+  .mobile-shadow-optimize {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+  }
+}
