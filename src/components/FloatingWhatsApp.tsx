@@ -272,7 +272,7 @@ export default function FloatingWhatsApp() {
           {
             id: "welcome",
             from: "bot",
-            text: `${getGreeting()} ! 👋 Bienvenue chez **Anti-Nuisibles Yaoundé**.\n\nJe suis votre assistant intelligent. Comment puis-je vous aider à protéger votre espace aujourd’hui ?`,
+            text: `${getGreeting()} ! 👋 Bienvenue chez ** NEXORA (Anti-Nuisibles) Yaoundé & Douala**.\n\nJe suis votre assistant intelligent. Comment puis-je vous aider à protéger votre espace aujourd’hui ?`,
             time: getCurrentTime(),
           },
         ]);
