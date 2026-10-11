@@ -11,6 +11,7 @@ import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import ScrollProgress from "./components/ScrollProgress";
+import ImageInterventions from "./components/ImageInterventions";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <main>
         <ScrollProgress/>
         <Hero />
+        <ImageInterventions />
         <Stats />
         <Risks />
         <Services />
