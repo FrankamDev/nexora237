@@ -2,12 +2,12 @@ import { useState } from "react";
 
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80",
+    src: "/i4.jpg",
     title: "Traitement d'une chambre",
     category: "Désinsectisation",
   },
   {
-    src: "https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=1200&q=80",
+    src: "./i3.jpg",
     title: "Traitement d'une cuisine",
     category: "Désinfection",
   },

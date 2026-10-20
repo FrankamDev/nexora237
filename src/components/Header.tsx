@@ -11,11 +11,11 @@ interface NavLink {
 }
 
 const navLinks: NavLink[] = [
-  { label: "Services", href: "#services" },
-  { label: "Pourquoi NEXORA", href: "#pourquoi" },
-  { label: "Comment ça marche", href: "#processus" },
-  { label: "Témoignages", href: "#temoignages" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Services", href: "/services" },
+  { label: "Pourquoi NEXORA", href: "/pourquoi" },
+  { label: "Comment ça marche", href: "/processus" },
+  { label: "Témoignages", href: "/temoignages" },
+  { label: "FAQ", href: "/faq" },
 ];
 
 export default function Header() {
@@ -64,7 +64,7 @@ export default function Header() {
               
               <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#0F172A] border border-cyan-500/30 flex items-center justify-center shadow-2xl overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-blue-600/30" />
-                <img src="/logo.jpg" alt="Logo NEXORA" className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-400 group-hover:scale-110 transition-transform duration-300" />
+                <img src="/logo.jpg" alt="Logo NEXORA" className="rounded-full sm:w-6 sm:h-6 text-cyan-400 group-hover:scale-110 transition-transform duration-300" />
               </div>
             </div>
 
@@ -73,7 +73,7 @@ export default function Header() {
                 NEXORA<span className="text-cyan-400 font-extrabold">.</span>
               </span>
               <span className="text-[9px] font-semibold tracking-widest text-cyan-400/80 uppercase -mt-1 hidden sm:block">
-                High-End Security
+                Anti-Nuisibles
               </span>
             </div>
           </a>
