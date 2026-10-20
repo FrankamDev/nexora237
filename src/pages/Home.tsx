@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Router } from "react-router-dom";
 import FAQ from "../components/FAQ";
 import FinalCTA from "../components/FinalCTA";
 import FloatingWhatsApp from "../components/FloatingWhatsApp";
@@ -19,6 +20,9 @@ function Home() {
     <div className="min-h-screen bg-white">
       <Header />
       <main>
+        <BrowserRouter>
+        <Router>
+            <Route path="/services" element={<Services/>}/>
         <ScrollProgress/>
         <Hero />
         <ImageInterventions />
@@ -31,6 +35,8 @@ function Home() {
         <FAQ />
         <FinalCTA />
         <FloatingWhatsApp/>
+        </Router>
+        </BrowserRouter>
       </main>
       <Footer />
     </div>
