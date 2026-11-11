@@ -17,13 +17,14 @@ import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
 import FinalCTA from "../components/FinalCTA";
 import Risks from "../components/Risks";
+import Hero from "../components/Hero";
 
 
 function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-        {/* <Hero /> */}
+        <Hero />
       <main>
         <BrowserRouter>
         <ScrollProgress/>

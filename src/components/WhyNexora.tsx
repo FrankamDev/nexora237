@@ -144,7 +144,7 @@ export default function WhyNexora() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
+
           {/* LEFT COLUMN: Narrative & Quote (5 cols) */}
           <div className="lg:col-span-5 space-y-6">
             <motion.div
@@ -191,7 +191,7 @@ export default function WhyNexora() {
               className="relative p-6 sm:p-7 rounded-2xl bg-gradient-to-br from-[#0F172A]/90 to-[#090D16]/90 border border-cyan-500/30 backdrop-blur-xl shadow-xl overflow-hidden"
             >
               <Quote className="absolute -bottom-2 -right-2 w-20 h-20 text-cyan-500/5 rotate-180 pointer-events-none" />
-              
+
               <p className="text-slate-200 text-sm sm:text-base font-medium italic leading-relaxed relative z-10">
                 « Nous traitons chaque domicile et chaque commerce comme si
                 c'était le nôtre. Notre mission : des espaces sains et des clients qui dorment enfin paisiblement. »
