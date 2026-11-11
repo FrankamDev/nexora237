@@ -1,59 +1,52 @@
-
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-
-import FloatingWhatsApp from "../components/FloatingWhatsApp";
-import Footer from "../components/Footer";
 import Header from "../components/Header";
-
-import ImageInterventions from "../components/ImageInterventions";
-import Process from "../components/Process";
-
-import ScrollProgress from "../components/ScrollProgress";
-import Services from "../components/Services";
+import Hero from "../components/Hero";
 import Stats from "../components/Stats";
-
+import Risks from "../components/Risks";
+import Services from "../pages/Services";
+import ImageInterventions from "../components/ImageInterventions";
 import WhyNexora from "../components/WhyNexora";
+import Process from "../components/Process";
 import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
 import FinalCTA from "../components/FinalCTA";
-import Risks from "../components/Risks";
-import Hero from "../components/Hero";
-
+import FloatingWhatsApp from "../components/FloatingWhatsApp";
+import Footer from "../components/Footer";
+import ScrollProgress from "../components/ScrollProgress";
 
 function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen overflow-x-hidden bg-white">
       <Header />
-        <Hero />
-      <main>
-        <BrowserRouter>
-        <ScrollProgress/>
-        <Routes>
-          <Route path="/services" element={<Services />} />
-          <Route path="/interventions" element={<ImageInterventions />} />
-          <Route path="/stats" element={<Stats />} />
-          <Route path="/pourquoi" element={<WhyNexora />} />
-          <Route path="/process" element={<Process />} />
-          <Route path="/temoignages" element={<Testimonials />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/processus" element={<Process />} />
-        </Routes>
 
-        
+      <ScrollProgress />
+
+      <main>
+        <Hero />
+
         <Stats />
+
+        <Services />
+
+        <ImageInterventions />
+
         <Risks />
-        
-        {/* <WhyNexora /> */}
-        {/* <Process /> */}
-        
-      <FAQ />
+
+        <WhyNexora />
+
+        <Process />
+
+        <Testimonials />
+
+        <FAQ />
+
         <FinalCTA />
-        <FloatingWhatsApp/>
-        </BrowserRouter>
       </main>
+
+      <FloatingWhatsApp />
+
       <Footer />
     </div>
   );
 }
 
-export default Home; 
+export default Home;
